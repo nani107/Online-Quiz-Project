@@ -4,9 +4,10 @@ import com.quiz.model.User1;
 import java.sql.*;
 
 public class UserDAO1 {
-    private String jdbcURL = "jdbc:mysql://localhost:3306/quizdb?useSSL=false";
-    private String jdbcUsername = "root";
-    private String jdbcPassword = "sweety"; // Update with your MySQL password
+    // Read database connection details from environment variables
+    private String jdbcURL = System.getenv("DB_URL") != null ? System.getenv("DB_URL") : "jdbc:mysql://localhost:3306/quizdb?useSSL=false";
+    private String jdbcUsername = System.getenv("DB_USER") != null ? System.getenv("DB_USER") : "root";
+    private String jdbcPassword = System.getenv("DB_PASSWORD") != null ? System.getenv("DB_PASSWORD") : "sweety";
 
     private Connection getConnection() throws SQLException {
         try {

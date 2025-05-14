@@ -84,7 +84,7 @@
         <h1 class="welcome-title">Welcome to Quiz</h1>
         <div class="card">
             <div class="card-body">
-                <img src="C:\Users\naras\git\repository2\QuizApplication\quiz-image.jpg" 
+                <img src="images/quiz-image.jpg" 
                      alt="Quiz Image" class="quiz-image">
                 <h2>Welcome to User Authentication</h2>
                 <p class="lead">Join our exciting quiz platform! Register to start or log in to continue your journey.</p>
